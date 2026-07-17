@@ -46,8 +46,15 @@ Os serviços serão executados via Docker ao longo do projeto.
     Dia 1 ✅
     Dia 2 ✅
     Dia 3 ✅
+    Dia 4 ✅
+
 - Sprint 1 ⏳
 - Sprint 2 ⏳
+
+## Arquitetura Atual
+Python
+   │
+PostgreSQL (Docker)
 
 ## Status
 
