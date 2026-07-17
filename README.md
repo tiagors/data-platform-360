@@ -57,6 +57,16 @@ Python
    │
 PostgreSQL (Docker)
 
+## Fluxo de Desenvolvimento
+Este projeto utiliza Git como ferramenta de versionamento.
+
+Fluxo adotado:
+
+1. Criar uma branch para cada tarefa.
+2. Desenvolver pequenas alterações.
+3. Criar commits semânticos.
+4. Publicar no GitHub.
+
 ## Status
 
 Em desenvolvimento.
