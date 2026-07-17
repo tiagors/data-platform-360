@@ -43,10 +43,11 @@ Os serviços serão executados via Docker ao longo do projeto.
 ## Roadmap
 
 - Sprint 0 ⏳
-    Dia 1 ✅
-    Dia 2 ✅
-    Dia 3 ✅
-    Dia 4 ✅
+    Dia 1 ✅ – Ambiente Python
+    Dia 2 ✅ – Repositório Profissional
+    Dia 3 ✅ – Docker
+    Dia 4 ✅ – PostgreSQL Local
+    Dia 5 ✅ – Data Engineering Second Brain
 
 - Sprint 1 ⏳
 - Sprint 2 ⏳
