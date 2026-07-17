@@ -37,11 +37,15 @@ Construir uma plataforma moderna de Engenharia de Dados durante 16 semanas, simu
 ├───src
 └───tests
 
+## Infraestrutura Local
+Os serviços serão executados via Docker ao longo do projeto.
+
 ## Roadmap
 
 - Sprint 0 ⏳
     Dia 1 ✅
     Dia 2 ✅
+    Dia 3 ✅
 - Sprint 1 ⏳
 - Sprint 2 ⏳
 
