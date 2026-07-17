@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS products (
+    product_id INTEGER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    product_name VARCHAR(150) NOT NULL,
+    category VARCHAR(100),
+    price NUMERIC(10,2),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);
