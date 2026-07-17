@@ -15,14 +15,33 @@ Construir uma plataforma moderna de Engenharia de Dados durante 16 semanas, simu
 - PySpark
 - dbt
 - Looker Studio
+- Git
+- GitHub
 
 ## Estrutura do Projeto
 
-(Adicionar a árvore de diretórios)
+├───.github
+├───architecture
+├───datasets
+├───dbt
+├───docker
+├───docker-compose.yml
+├───docs
+├───images
+├───logs
+├───notebooks
+├───requirements.txt
+├───scripts
+├───spark
+├───sql
+├───src
+└───tests
 
 ## Roadmap
 
-- Sprint 0 ✅
+- Sprint 0 ⏳
+    Dia 1 ✅
+    Dia 2 ✅
 - Sprint 1 ⏳
 - Sprint 2 ⏳
 
