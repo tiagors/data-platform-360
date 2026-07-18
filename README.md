@@ -68,6 +68,22 @@ Fluxo adotado:
 3. Criar commits semânticos.
 4. Publicar no GitHub.
 
+
+## Modelo de Dados Inicial
+
+A primeira versão da plataforma utiliza o PostgreSQL como camada de armazenamento.
+
+### Tabelas
+
+- `customers`
+- `products` (exercício)
+
+Os scripts SQL estão organizados em:
+
+- `sql/schema/`
+- `sql/seeds/`
+- `sql/queries/`
+
 ## Status
 
 Em desenvolvimento.
