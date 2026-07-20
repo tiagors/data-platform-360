@@ -1,0 +1,11 @@
+"order_id","customer_email","order_date","total_amount"
+1,ana.silva@email.com,2026-07-18 06:00:00.000 -0300,89.90
+2,carlos.souza@email.com,2026-07-18 06:30:00.000 -0300,249.90
+3,mariana.oliveira@email.com,2026-07-18 07:00:00.000 -0300,329.90
+4,ana.silva@email.com,2026-07-18 07:30:00.000 -0300,4599.90
+5,carlos.souza@email.com,2026-07-18 08:00:00.000 -0300,1299.90
+6,mariana.oliveira@email.com,2026-07-18 08:30:00.000 -0300,579.80
+7,ana.silva@email.com,2026-07-18 09:00:00.000 -0300,339.80
+8,carlos.souza@email.com,2026-07-18 09:30:00.000 -0300,4929.80
+9,mariana.oliveira@email.com,2026-07-18 10:00:00.000 -0300,1389.80
+10,ana.silva@email.com,2026-07-18 10:30:00.000 -0300,249.90

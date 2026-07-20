@@ -84,6 +84,29 @@ git clone https://github.com/tiagors/data-platform-360.git
 cd data-platform-360
 ```
 
+
+## Configuração do ambiente
+
+1. Clone o repositório.
+2. Crie o ambiente virtual:
+   ```
+   python -m venv .venv
+```
+
+3. Ative o ambiente virtual.
+4. Instale as dependências:
+    
+    ```
+    pip install -r requirements.txt
+    ```
+    
+5. Execute o script de validação do ambiente:
+    
+    ```
+    python src/test_environment.py
+    ```
+
+
 ---
 
 # Executando o ambiente
