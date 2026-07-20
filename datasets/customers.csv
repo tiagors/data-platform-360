@@ -9,3 +9,4 @@ customer_id,first_name,last_name,email,city,state,created_at
 8,Ricardo,Gomes,ricardo.gomes@email.com,Salvador,BA,2026-07-08
 9,Juliana,Martins,juliana.martins@email.com,Fortaleza,CE,2026-07-09
 10,Bruno,Rocha,bruno.rocha@email.com,Brasília,DF,2026-07-10
+11,Pedro,lucas, ,Brasília,DF,2026-07-10
