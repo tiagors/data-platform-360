@@ -1,0 +1,11 @@
+customer_id,first_name,last_name,email,city,state,created_at
+1,Ana,Silva,ana.silva@email.com,São Paulo,SP,2026-07-01
+2,Carlos,Souza,carlos.souza@email.com,Porto Alegre,RS,2026-07-02
+3,Mariana,Oliveira,mariana.oliveira@email.com,Curitiba,PR,2026-07-03
+4,João,Pereira,joao.pereira@email.com,Florianópolis,SC,2026-07-04
+5,Fernanda,Costa,fernanda.costa@email.com,Belo Horizonte,MG,2026-07-05
+6,Lucas,Almeida,lucas.almeida@email.com,Rio de Janeiro,RJ,2026-07-06
+7,Patrícia,Lima,patricia.lima@email.com,Recife,PE,2026-07-07
+8,Ricardo,Gomes,ricardo.gomes@email.com,Salvador,BA,2026-07-08
+9,Juliana,Martins,juliana.martins@email.com,Fortaleza,CE,2026-07-09
+10,Bruno,Rocha,bruno.rocha@email.com,Brasília,DF,2026-07-10
