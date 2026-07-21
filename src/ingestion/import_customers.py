@@ -1,12 +1,42 @@
 import pandas as pd
 import time
+import logging
+from datetime import datetime
+from pathlib import Path
 
 from src.utils.database import get_connection
 from src.utils.paths import DATASETS_DIR
+from src.utils.paths import LOGS_DIR
 
-inicio = time.perf_counter()
+
+
+log_file = LOGS_DIR / f"pipeline_{datetime.now():%Y-%m-%d}.log"
+
+logger = logging.getLogger("pipeline")
+
+if not logger.handlers:
+    logger.setLevel(logging.INFO)
+
+    formatter = logging.Formatter(
+        "%(asctime)s | %(levelname)-8s | %(message)s"
+    )
+
+    console = logging.StreamHandler()
+    console.setFormatter(formatter)
+
+    file_handler = logging.FileHandler(
+        log_file,
+        encoding="utf-8"
+    )
+    file_handler.setFormatter(formatter)
+
+    logger.addHandler(console)
+    logger.addHandler(file_handler)
+
 
 def import_customers():
+
+    inicio = time.perf_counter()
 
     conn = None
     cursor = None 
@@ -16,6 +46,7 @@ def import_customers():
         csv_path = DATASETS_DIR / "customers.csv"
 
         df = pd.read_csv(csv_path)
+        logger.info(f"Registros encontrados: {len(df)}")
 
         registros_lidos = len(df)
         registros_processados = 0
@@ -56,31 +87,33 @@ def import_customers():
                 registros_inseridos += 1
             else:
                 registros_ignorados += 1
-
+        
         conn.commit()
 
         fim = time.perf_counter()
         tempo_execucao = fim - inicio
+        logger.info(f"Tempo: {tempo_execucao:.2f} segundos")
 
-        print("\n========================================")
-        print("Pipeline finalizado")
-        print("========================================")
-        print(f"Arquivo: {csv_path.name}")
-        print(f"Registros lidos: {registros_lidos}")
-        print(f"Registros processados: {registros_processados}")
-        print(f"Registros inseridos: {registros_inseridos}")
-        print(f"Registros ignorados: {registros_ignorados}")
-        print(f"Tempo de execução.....: {tempo_execucao:.2f} s")
+        logger.info("=" * 60)
+        logger.info("Pipeline finalizado")
+        logger.info(f"Arquivo..............: {csv_path.name}")
+        logger.info(f"Registros lidos......: {registros_lidos}")
+        logger.info(f"Registros processados: {registros_processados}")
+        logger.info(f"Registros inseridos..: {registros_inseridos}")
+        logger.info(f"Registros ignorados..: {registros_ignorados}")
+        logger.info(f"Tempo total..........: {tempo_execucao:.2f} s")
+        logger.info("=" * 60)
 
     except Exception as e:
 
         if conn is not None:
             conn.rollback()
 
-        print("\n========================================")
-        print("Pipeline finalizado com erro")
-        print("========================================")
-        print(f"Erro: {e}")
+        logger.error("=" * 60)
+        logger.error("Pipeline finalizado com erro")
+        logger.error(f"Erro: {e}")
+        logger.exception("Erro durante execução do pipeline.")
+        logger.error("=" * 60)
 
     finally:
         
