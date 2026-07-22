@@ -282,6 +282,21 @@ ORDER BY price DESC;
 
 ---
 
+## Validação da carga
+
+Após executar a importação, rode as consultas em:
+
+sql/validation.sql
+
+As consultas verificam:
+
+- Quantidade de registros
+- Valores nulos
+- Duplicidades
+- Integridade básica da carga
+
+---
+
 ## Python
 
 Seguimos:
