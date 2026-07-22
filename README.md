@@ -107,7 +107,6 @@ cd data-platform-360
     ```
 
 
----
 
 # Executando o ambiente
 
@@ -291,6 +290,20 @@ Seguimos:
 - Black
 - Ruff
 - Type Hints
+
+---
+
+
+
+# Observabilidade
+
+Atualize o README adicionando uma seção **Observabilidade** contendo:
+
+- Que o pipeline utiliza `logging` em vez de `print()`.
+- Onde os arquivos de log são gravados (`logs/`).
+- Quais informações são registradas.
+- Como consultar os logs após uma execução.
+- Como interpretar os níveis de log.
 
 ---
 
