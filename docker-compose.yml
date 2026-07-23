@@ -23,6 +23,20 @@ services:
       retries: 5
       start_period: 10s
 
+
+  python-app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+
+    container_name: data-platform-python
+
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+
+
 volumes:
   postgres_data:
 
