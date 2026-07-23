@@ -1,0 +1,24 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Git
+.git
+.gitignore
+
+# Airflow
+airflow/logs/
+airflow/logs/**
+airflow/.tmp/
+
+# IDE
+.vscode/
+.idea/
+
+# Testes
+.pytest_cache/
+
+# Sistema
+.DS_Store
+Thumbs.db
